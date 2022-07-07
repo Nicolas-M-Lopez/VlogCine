@@ -1,0 +1,212 @@
+*{ /* Reseteo */
+    margin: 0;
+    padding: 0;
+}
+
+body{ /* Parametros del body */
+    background-color: blue;
+    font-size: 3vh;
+}
+
+.grilla{ /* Grilla de estructura del html */
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: min-content;
+}
+
+/* Caracteristicas del Header */
+.encabezado{
+    background-color: rgb(255, 0, 0);
+    padding: 2vh;
+}
+
+header{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.flexEncabezado{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.flexEncabezado img{
+    width: 10vh;
+}
+
+.flexEncabezado nav{
+    width: 80%;
+}
+
+.flexEncabezado ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+.flexEncabezado ul li{
+    margin-right: 5px;
+}
+
+/* Caracteristicas del Main */
+.cuerpo{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.videos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;   
+}
+
+.videos iframe{
+    width: 37vh;
+    height: 20vh;
+    margin-top: 5px;
+}
+
+.noticias{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.noticias img{
+    width: 30vh;
+}
+
+.recomendaciones{ /* Aplicacion de grid para acomodar las recomendaciones */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(10vh, 36vh));
+    gap: 10px;
+    justify-content: center;
+}
+
+.recomendaciones img{
+    width: 100%;
+}
+
+.recomendaciones div p{
+    font-size: 2vh;
+}
+
+
+    /* Caracteristicas del Footer */
+.pie{    
+    width: 90%;
+    margin: 0 auto;
+}
+
+footer{
+    background-color: rgb(119, 12, 12);
+    padding: 2vh;
+    margin-top: 1vh;
+}
+
+.redes{
+    display: flex;
+    justify-content: end;
+    list-style: none;
+}
+
+.redes img{
+    width: 10vh;
+    margin-left: 10px;
+}
+
+span{
+    font-size: 3vh;
+}
+
+    /* Noticias html */
+
+.grillaNoticias{ /* Grilla para estructurar cada noticias con su respectivo texto */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(10vh, 65vh));
+    row-gap: 20px;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.grillaNoticias div img{
+    width: 100%;
+}
+
+.grillaNoticias div p{
+    font-size: 2.5vh;
+}
+
+    /* Plataformas html */
+
+.grillaPlataformas{ /* Grilla para estructurar cada plataforma con su respectivo texto */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(10vh, 65vh));
+    row-gap: 20px;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.grillaPlataformas div img{
+    width: 100%;
+}
+
+.grillaPlataformas div p{
+    font-size: 2.5vh;
+}
+
+.cuerpo main h1{
+    display: flex;
+    justify-content: center;
+    font-size: 5vh;
+}
+
+    /* Quienes-somos html */
+
+.flexSomos{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.flexSomos img{
+    width: 30vh;
+}
+
+
+    /* Contacto html */
+
+.mainContacto h1{
+    font-size: 5vh;
+}
+
+.mainContacto h2{
+    font-size: 4vh;
+}
+
+.ubicacion iframe{
+    width: 35vh;
+    height: 30vh;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.horarios ul{
+    list-style: none;
+}
+
+@media screen and (max-width: 450px) { /* Media para cambiar de color el fondo */
+    body{
+        background-color: darkorange;
+    }
+}
