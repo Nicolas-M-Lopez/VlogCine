@@ -51,6 +51,16 @@ header{
     margin-right: 5px;
 }
 
+.flexEncabezado ul li a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.flexEncabezado ul li a:hover {
+    border-top: solid rgb(0, 0, 0) 3px;
+    transition: 0.5s;
+}
+
 /* Caracteristicas del Main */
 .cuerpo{
     width: 90%;
