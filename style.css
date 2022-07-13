@@ -38,3 +38,11 @@ main{
     margin-top: 5px;
 }
 
+.fotoGrupo{
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.fotoGrupo div img{
+    max-width: 100%;
+}
