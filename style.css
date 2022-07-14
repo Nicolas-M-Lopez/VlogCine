@@ -1,4 +1,47 @@
-.navbar-brand{
+*{      /* Reseteo */
+    margin: 0;
+    padding: 0;
+}
+
+body{       /* Valores a body para que quede bien colocado el footer */
+    min-height: 100vh;
+    position: relative;
+}
+
+main{       /* Margin para espaciar bien el nav del main */
+    margin-top: 10px;
+}
+
+.pie{       /* Caracteristicas del footer */
+    width: 90%;
+    margin: 0 auto;
+}
+
+footer{
+    background-color: rgb(48, 37, 37);
+    padding: 2vh;
+    margin-top: 1vh;
+    position: absolute;
+    width: 100%;
+}
+
+.redes{
+    display: flex;
+    justify-content: end;
+    list-style: none;
+}
+
+.redes img{
+    width: 10vh;
+    margin-left: 10px;
+}
+
+span{
+    font-size: 3vh;
+    color: white;
+}
+
+.navbar-brand{      /* Caracteristicas del nav */
     color: white;
     font-size: 3vh;
 }
@@ -8,11 +51,51 @@
     font-size: 2vh;
 }
 
-main{
-    margin-top: 10px;
+.navbar-collapse{
+    display: flex;
+    justify-content: center;
 }
 
-.imagenesNoticias{
+p{      /* Tamaño de fuente para todo el sitio */
+    font-size: 2vh;
+}
+
+.sectionEstrenos{       /* Caracteristicas de las diferentes secciones del index html */
+    width: 90%;
+}
+
+.estrenos iframe{
+    max-width: 100%;
+    height: auto;
+}
+
+.sectionNoticias{
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 5px;
+}
+
+.noticias{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.noticias img{
+    width: 30vh;
+    margin-bottom: 5px;
+}
+
+.sectionRecomendaciones{
+    width: 90%;
+}
+
+.sectionQuienes{
+    width: 90%;
+    font-size: 3vh;
+}
+
+.imagenesNoticias{      /* Caracteristicas de noticias html */
     display: flex;
     justify-content: center;
 }
@@ -21,7 +104,7 @@ main{
     width: 35vh;
 }
 
-.imagenesPlataformas{
+.imagenesPlataformas{       /* Caracteristicas de plataformas html */
     display: flex;
     justify-content: center;
     margin-top: 5px;
@@ -38,11 +121,17 @@ main{
     margin-top: 5px;
 }
 
-.fotoGrupo{
+.fotoGrupo{     /* Caracteristicas de quienes somos html */
     margin-top: 5px;
     margin-bottom: 10px;
 }
 
 .fotoGrupo div img{
     max-width: 100%;
+    margin-top: 2px;
+}
+
+
+.mainContacto{      /* Caracteristica de contacto html */
+    width: 90%;
 }
