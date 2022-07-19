@@ -6,6 +6,7 @@
 body{       /* Valores a body para que quede bien colocado el footer */
     min-height: 100vh;
     position: relative;
+    font-family: "Audiowide", sans-serif;
 }
 
 main{       /* Margin para espaciar bien el nav del main */
@@ -31,9 +32,8 @@ footer{
     list-style: none;
 }
 
-.redes img{
-    width: 10vh;
-    margin-left: 10px;
+.redes i{
+    margin: 5px;
 }
 
 span{
@@ -46,14 +46,48 @@ span{
     font-size: 3vh;
 }
 
+.nav-item{
+    position: relative;
+}
+
 .nav-link{
     color: whitesmoke;
     font-size: 2vh;
 }
 
+.nav-link::before{
+    display: block;
+    content: '';
+    width: 0;
+    background-color: white;
+    height: 5px;
+    top: 2px;
+    position: absolute;
+    transition: width 0.2s;
+}
+
+.nav-link:hover::before{
+    width: 85%;
+}
+
 .navbar-collapse{
     display: flex;
     justify-content: center;
+}
+
+.navbar-collapse ul{
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+}
+
+@media screen and (max-width: 991px){
+    .navbar-collapse{
+        display: block;
+    }
+    .nav-link::before{
+        display: none;
+    }
 }
 
 p{      /* Tamaño de fuente para todo el sitio */
@@ -64,13 +98,25 @@ p{      /* Tamaño de fuente para todo el sitio */
     width: 90%;
 }
 
-.estrenos iframe{
-    max-width: 100%;
-    height: auto;
+.estrenos{
+    height: 20vh;
+    margin-bottom: 2px;
 }
 
+.estrenos iframe{
+    max-width: 100%;
+    max-height: 100%;
+    padding: 3px;
+    border: solid 1px rgba(0, 0, 0, 0.192);
+    border-radius: 10px;
+}
+
+.estrenos iframe:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+  }
+
 .sectionNoticias{
-    width: 90%;
+    width: 89%;
     margin: 0 auto;
     margin-bottom: 5px;
 }
@@ -82,26 +128,45 @@ p{      /* Tamaño de fuente para todo el sitio */
 }
 
 .noticias img{
-    width: 30vh;
-    margin-bottom: 5px;
+    max-width: 30vh;
+    height: 95%;
+    margin-bottom: 15px;
+    padding: 3px;
+    border: solid 1px rgba(0, 0, 0, 0.192);
+    border-radius: 10px;
 }
+
+.noticias img:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+  }
 
 .sectionRecomendaciones{
     width: 90%;
 }
 
-.sectionQuienes{
-    width: 90%;
-    font-size: 3vh;
+.recomendacionFoto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.sectionRecomendaciones img{
+    max-width: 27vh;
+    height: 80%;
+    padding: 3px;
+    border: solid 1px rgba(0, 0, 0, 0.192);
+    border-radius: 10px;
+}
+
+.recomendacionTexto{
+    display: flex;
+    align-items: center;
+}
+
 
 .imagenesNoticias{      /* Caracteristicas de noticias html */
     display: flex;
     justify-content: center;
-}
-
-.imagenesNoticias img{
-    width: 35vh;
 }
 
 .imagenesPlataformas{       /* Caracteristicas de plataformas html */
@@ -121,7 +186,7 @@ p{      /* Tamaño de fuente para todo el sitio */
     margin-top: 5px;
 }
 
-.fotoGrupo{     /* Caracteristicas de quienes somos html */
+.fotoGrupo{     /* Caracteristicas de staff html */
     margin-top: 5px;
     margin-bottom: 10px;
 }
@@ -131,7 +196,13 @@ p{      /* Tamaño de fuente para todo el sitio */
     margin-top: 2px;
 }
 
+.sectionQuienes{
+    width: 90%;
+    font-size: 3vh;
+}
 
 .mainContacto{      /* Caracteristica de contacto html */
     width: 90%;
 }
+
+
