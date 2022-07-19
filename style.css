@@ -3,7 +3,7 @@
     padding: 0;
 }
 
-body{       /* Valores a body para que quede bien colocado el footer */
+body{       /* Valores a body para que quede bien colocado el footer y fuente de la letra */
     min-height: 100vh;
     position: relative;
     font-family: "Audiowide", sans-serif;
@@ -55,7 +55,7 @@ span{
     font-size: 2vh;
 }
 
-.nav-link::before{
+.nav-link::before{  /* Animacion para el nav */
     display: block;
     content: '';
     width: 0;
@@ -81,7 +81,7 @@ span{
     width: 50%;
 }
 
-@media screen and (max-width: 991px){
+@media screen and (max-width: 991px){   /* Media query para que no haya hover en mobile */
     .navbar-collapse{
         display: block;
     }
@@ -111,8 +111,8 @@ p{      /* Tamaño de fuente para todo el sitio */
     border-radius: 10px;
 }
 
-.estrenos iframe:hover {
-    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+.estrenos iframe:hover {    /* Animacion para los videos */
+    box-shadow: 0 0 2px 1px rgba(0, 139, 186, 0.733);
   }
 
 .sectionNoticias{
@@ -136,8 +136,8 @@ p{      /* Tamaño de fuente para todo el sitio */
     border-radius: 10px;
 }
 
-.noticias img:hover {
-    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+.noticias img:hover {   /* Animacion para las imagenes */
+    box-shadow: 0 0 2px 1px rgba(0, 139, 186, 0.733);
   }
 
 .sectionRecomendaciones{
