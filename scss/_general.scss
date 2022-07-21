@@ -1,0 +1,97 @@
+*{      /* Reseteo */
+    margin: 0;
+    padding: 0;
+}
+
+body{       /* Valores a body para que quede bien colocado el footer y fuente de la letra */
+    min-height: 100vh;
+    position: relative;
+    font-family: "Audiowide", sans-serif;
+}
+
+main{       /* Margin para espaciar bien el nav del main */
+    margin-top: 10px;
+}
+
+.pie{       /* Caracteristicas del footer */
+    width: 90%;
+    margin: 0 auto;
+}
+
+footer{
+    background-color: map-get($colores, "color-footer");
+    padding: 2vh;
+    margin-top: 1vh;
+    position: absolute;
+    width: 100%;
+}
+
+.redes{
+    display: flex;
+    justify-content: end;
+    list-style: none;
+
+    i{
+        margin: 5px;
+    }
+}
+
+span{
+    font-size: 3vh;
+    color: map-get($colores, "color-principal");
+}
+
+.navbar-brand{      /* Caracteristicas del nav */
+    color: map-get($colores, "color-principal");
+    font-size: 3vh;
+}
+
+.nav-item{
+    position: relative;
+}
+
+.nav-link{
+    color: map-get($colores, "color-principal");
+    font-size: 2vh;
+
+    &::before{
+        display: block;
+        content: '';
+        width: 0;
+        background-color: map-get($colores, "color-principal");
+        height: 5px;
+        top: 2px;
+        position: absolute;
+        transition: width 0.2s;
+    }
+
+    &:hover::before{
+        width: 85%;
+    }
+}
+
+
+.navbar-collapse{
+    display: flex;
+    justify-content: center;
+
+    ul{
+        display: flex;
+        justify-content: space-evenly;
+        width: 50%;
+    }
+}
+
+
+@media screen and (max-width: 991px){   /* Media query para que no haya hover en mobile */
+    .navbar-collapse{
+        display: block;
+    }
+    .nav-link::before{
+        display: none;
+    }
+}
+
+p{      /* Tamaño de fuente para el contenido de todo el sitio */
+    font-size: 2vh;
+}
