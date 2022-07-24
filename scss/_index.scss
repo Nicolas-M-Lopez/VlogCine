@@ -1,3 +1,5 @@
+@import './base/extends'; 
+
   /* Caracteristicas de las diferentes secciones del index html */
 .sectionEstrenos{     
     width: 90%;
@@ -30,18 +32,16 @@
 }
 
 .noticias{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    @include flex(wrap, space-evenly, 0);
 
     img{
+        
         max-width: 30vh;
         height: 95%;
         margin-bottom: 15px;
         padding: 3px;
-        border: solid 1px rgba(0, 0, 0, 0.192);
-        border-radius: 10px;
-
+        @extend %bordes;
+        
         &:hover{    /* Animacion para las imagenes */
             box-shadow: 0 0 2px 1px map-get($colores, "color-hover");
         }
@@ -57,19 +57,15 @@
         max-width: 27vh;
         height: 80%;
         padding: 3px;
-        border: solid 1px rgba(0, 0, 0, 0.192);
-        border-radius: 10px;       
+        @extend %bordes;       
     }
 }
 
 .recomendacionFoto{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex(0, center, center);
 }
 
 
 .recomendacionTexto{
-    display: flex;
-    align-items: center;
+    @include flex(0, 0, center);
 }
