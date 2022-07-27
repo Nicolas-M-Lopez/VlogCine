@@ -169,6 +169,11 @@ p{      /* Tamaño de fuente para todo el sitio */
     justify-content: center;
 }
 
+.tituloNoticias{
+    display: flex;
+    justify-content: center;
+}
+
 .imagenesPlataformas{       /* Caracteristicas de plataformas html */
     display: flex;
     justify-content: center;
@@ -186,6 +191,11 @@ p{      /* Tamaño de fuente para todo el sitio */
     margin-top: 5px;
 }
 
+.tituloPlataformas{
+    display: flex;
+    justify-content: center;
+}
+
 .fotoGrupo{     /* Caracteristicas de staff html */
     margin-top: 5px;
     margin-bottom: 10px;
@@ -199,6 +209,11 @@ p{      /* Tamaño de fuente para todo el sitio */
 .sectionQuienes{
     width: 90%;
     font-size: 3vh;
+}
+
+.quienesSomos{
+    display: flex;
+    justify-content: center;
 }
 
 .mainContacto{      /* Caracteristica de contacto html */

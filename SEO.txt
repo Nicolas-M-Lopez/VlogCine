@@ -1,0 +1,25 @@
+INDEX:
+Keywords: cine, series, noticias, cinemundo, netflix, prime video, dinsey plus, stremio
+Description: Canal donde actualizamos diariamente las ultimas noticias en el universo del cine, donde te vamos a mostrar varias plataformas donde puedas ver tu contenido favorito y si recien estas entrando en este fascinante mundo, te recomendaremos semanalmente las peliculas que no podes ver.
+Title: Home / Cinemundo
+
+Noticias:
+keywords: cine, series, noticias, cinemundo, netflix, prime video, dinsey plus, stremio, ultimo momento, hollywood, bollywood
+Description: Enterate de lo que esta pasando actualmente en hollywood y bollywood, antes que todos. La primicia la tenes aca en Cinemundo.
+Title: Noticias / Cinemundo
+
+Plataformas:
+Keywords: cine, series, noticias, cinemundo, netflix, prime video, dinsey plus, stremio
+Description: Si estas buscando ver tu serie favorita, pero no la encontras? Aca en Cinemundo tenemos la solucion
+Title: Plataformas / Cinemundo
+
+Staff: 
+Keywords: cine, series, noticias, cinemundo, netflix, prime video, dinsey plus, stremio, staff, quienes somos
+Description: Aca te mostramos los perfiles de los profesionales que estan trabajando cada dia para darte un contenido de calidad.
+Title: Staff / Cinemundo
+
+Contacto: 
+Keywords: cine, series, noticias, cinemundo, netflix, prime video, dinsey plus, stremio, staff, quienes somos, trabajo, preguntas, consultas
+Description: Si quereas unirte al grupo mandanos tu cv, o si tenes alguna pregunta, no dudes en consultar.
+Title: Contacto / Cinemundo
+  
