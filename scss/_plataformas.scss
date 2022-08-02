@@ -1,0 +1,29 @@
+/* Caracteristicas de plataformas html */
+@import './base/extends'; 
+
+
+.imagenesPlataformas{       
+    @include flex(0, center, 0);
+    margin-top: 5px;
+    width: fit-content;
+
+    img{
+        width: 35vh;
+        @extend %bordes;
+
+        &:hover{    /* Hover para los videos */
+            box-shadow: 0 0 2px 1px map-get($colores, "color-hover");
+        }
+    }
+}
+
+
+.tutorial{
+    @include flex(0, center, 0);
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+.tituloPlataformas{
+    @include flex(0, center, 0);
+}

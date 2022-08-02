@@ -10,7 +10,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">    <!-- Link de bootstrap -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">    <!-- Link de google fonts -->  
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   <!-- Link de iconos -->
-    <link rel="stylesheet" href="../style.css">     <!-- Link de css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>    <!-- Link de animaciones -->
+    <link rel="stylesheet" href="../css/main.css">     <!-- Link de css -->
   </head>
   <body>
     <header>
@@ -43,41 +44,68 @@
         </nav>
     </header>
     <main>
-      <div class="container-fluid sectionQuienes">  <!-- Grid para las fotos -->
+      <h2 class="quienesSomos">¿Quienes somos?</h2>
+      <p class="container-fluid sectionQuienes">  <!-- Descripcion del staff y de los objetivos -->
+        Somos un grupo de gente apasionada por el arte de la filmografía, donde el objetivo principal es el de expandir y repartir el conocimiento que tenemos de este universo tan amplio, que parace nunca acabarse y siempre habrá algo nuevo para comunicar y debatir.
+      </p>
+      <p class="container-fluid sectionQuienes">El sitio no solo esta hecho para informar a los curiosos sobre las novedades que nos traen estas grandes y pequeñas empresas, aparte queremos generar una comunidad aca dentro de Cinemundo donde tengas la oportunidad de aportar o preguntar cualquier cosa que desees y creas que pueda ayudar al resto (para comunicarte con nosotros, por favor, ve a la pestaña de contacto). </p> 
+      <p class="container-fluid sectionQuienes"> 
+        Si bien estamos recien empezando con Cinemundo, no nos quedamos atras. Sumando mas de 10000 horas acumuladas entre series, peliculas y documentales, tambien contamos con una diversidad de cinefilos infinita dentro del grupo, que van desde veterinarios, psicologos hasta actores y grandes criticos del cine argentino. Así que, quien sabe, el proximo integrante podrías ser vos.
+      </p>       
+      
+      <div class="container-fluid sectionQuienes ">  <!-- Grid para las fotos en pantallas grandes-->
         <div class="row fotoGrupo">
-          <div class="col-md-3 col-6">
-            <img src="../Fotos/ejemplo-foto.png" alt="foto">
+          <div class="col-4 animate__animated animate__fadeInDown">
+            <img src="../Fotos/oficina1.jpg" alt="oficina">
           </div>
-          <div class="col-md-3 col-6">
-            <img src="../Fotos/ejemplo-foto.png" alt="foto">
+          <div class="col-4 animate__animated animate__fadeInDown">
+            <img src="../Fotos/oficina2.jpg" alt="oficina">
           </div>
-          <div class="col-md-3 col-6">
-            <img src="../Fotos/ejemplo-foto.png" alt="foto">
+          <div class="col-4 animate__animated animate__fadeInDown">
+            <img src="../Fotos/edificio1.jpg" alt="edificio">
           </div>
-          <div class="col-md-3 col-6">
-            <img src="../Fotos/ejemplo-foto.png" alt="foto">
+        </div>
+        <div class="row fotoGrupo">
+          <div class="col-4 animate__animated animate__fadeInUp">
+            <img src="../Fotos/grupo1.jpg" alt="grupo">
+          </div>
+          <div class="col-4 animate__animated animate__fadeInUp">
+            <img src="../Fotos/oficina3.jpg" alt="oficina">
+          </div>
+          <div class="col-4 animate__animated animate__fadeInUp">
+            <img src="../Fotos/cine1.jpg" alt="mini cine">
           </div>
         </div>
       </div>
-      <h2 class="quienesSomos">Quienes somos</h2>
-      <p class="container-fluid sectionQuienes">  <!-- Descripcion del staff -->
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque doloremque quasi consequatur sit, atque ex, blanditiis reprehenderit odio rem, expedita unde dolorum beatae mollitia assumenda quae id necessitatibus illum laudantium.Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque doloremque quasi consequatur sit, atque ex, blanditiis reprehenderit odio rem, expedita unde dolorum beatae mollitia assumenda quae id necessitatibus illum laudantium.Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque doloremque quasi consequatur sit, atque ex, blanditiis reprehenderit odio rem, expedita unde dolorum beatae mollitia assumenda quae id necessitatibus illum laudantium.Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque doloremque quasi consequatur sit, atque ex, blanditiis reprehenderit odio rem, expedita unde dolorum beatae mollitia assumenda quae id necessitatibus illum laudantium.Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque doloremque quasi consequatur sit, atque ex, blanditiis reprehenderit odio rem, expedita unde dolorum beatae mollitia assumenda quae id necessitatibus illum laudantium.
-      </p>
-      <div class="container-fluid sectionQuienes">  <!-- Grid para las fotos -->
-        <div class="row fotoGrupo">
-          <div class="col-md-3 col-6">
-            <img src="../Fotos/ejemplo-foto.png" alt="foto">
+      <div id="carouselExampleControls" class="carousel slide carrusel container" data-bs-ride="carousel"> <!-- Carousel para mobile -->
+        <div class="carousel-inner">
+          <div class="carousel-item active ratio ratio-21x9">
+            <img src="../Fotos/oficina1.jpg" class="d-block w-100" alt="oficina">
           </div>
-          <div class="col-md-3 col-6">
-            <img src="../Fotos/ejemplo-foto.png" alt="foto">
+          <div class="carousel-item ratio ratio-21x9">
+            <img src="../Fotos/oficina2.jpg" class="d-block w-100" alt="oficina">
           </div>
-          <div class="col-md-3 col-6">
-            <img src="../Fotos/ejemplo-foto.png" alt="foto">
+          <div class="carousel-item ratio ratio-21x9">
+            <img src="../Fotos/edificio1.jpg" class="d-block w-100" alt="edificio">
           </div>
-          <div class="col-md-3 col-6">
-            <img src="../Fotos/ejemplo-foto.png" alt="foto">
+          <div class="carousel-item ratio ratio-21x9">
+            <img src="../Fotos/cine1.jpg" class="d-block w-100" alt="cine">
+          </div>
+          <div class="carousel-item ratio ratio-21x9">
+            <img src="../Fotos/grupo1.jpg" class="d-block w-100" alt="grupo">
+          </div>
+          <div class="carousel-item ratio ratio-21x9">
+            <img src="../Fotos/oficina3.jpg" class="d-block w-100" alt="oficina">
           </div>
         </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
     </main>
     <footer> <!-- Footer -->

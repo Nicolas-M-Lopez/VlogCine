@@ -1,7 +1,8 @@
 @charset "UTF-8";
-.noticias img, .sectionRecomendaciones img {
+.estrenos iframe, .noticias img, .sectionRecomendaciones img, .imagenesPlataformas img, .fotoGrupo img {
   border: solid 1px rgba(0, 0, 0, 0.192);
-  border-radius: 10px; }
+  border-radius: 10px;
+  padding: 3px; }
 
 * {
   /* Reseteo */
@@ -32,7 +33,9 @@ footer {
 
 .redes {
   display: flex;
+  flex-wrap: 0;
   justify-content: end;
+  align-items: 0;
   list-style: none; }
   .redes i {
     margin: 5px; }
@@ -66,10 +69,14 @@ span {
 
 .navbar-collapse {
   display: flex;
-  justify-content: center; }
+  flex-wrap: 0;
+  justify-content: center;
+  align-items: 0; }
   .navbar-collapse ul {
     display: flex;
+    flex-wrap: 0;
     justify-content: space-evenly;
+    align-items: 0;
     width: 50%; }
 
 @media screen and (max-width: 991px) {
@@ -83,9 +90,10 @@ p {
   /* Tamaño de fuente para el contenido de todo el sitio */
   font-size: 2vh; }
 
-.noticias img, .sectionRecomendaciones img {
+.estrenos iframe, .noticias img, .sectionRecomendaciones img, .imagenesPlataformas img, .fotoGrupo img {
   border: solid 1px rgba(0, 0, 0, 0.192);
-  border-radius: 10px; }
+  border-radius: 10px;
+  padding: 3px; }
 
 /* Caracteristicas de las diferentes secciones del index html */
 .sectionEstrenos {
@@ -96,11 +104,9 @@ p {
   margin-bottom: 2px; }
   .estrenos iframe {
     max-width: 100%;
-    max-height: 100%;
-    padding: 3px;
-    border-radius: 10px; }
+    max-height: 100%; }
     .estrenos iframe:hover {
-      /* Animacion para los videos */
+      /* Hover para los videos */
       box-shadow: 0 0 2px 1px rgba(0, 139, 186, 0.733); }
 
 .sectionNoticias {
@@ -116,18 +122,16 @@ p {
   .noticias img {
     max-width: 30vh;
     height: 95%;
-    margin-bottom: 15px;
-    padding: 3px; }
+    margin-bottom: 15px; }
     .noticias img:hover {
-      /* Animacion para las imagenes */
+      /* Hover para las imagenes */
       box-shadow: 0 0 2px 1px rgba(0, 139, 186, 0.733); }
 
 .sectionRecomendaciones {
   width: 90%; }
   .sectionRecomendaciones img {
     max-width: 27vh;
-    height: 80%;
-    padding: 3px; }
+    height: 80%; }
 
 .recomendacionFoto {
   display: flex;
@@ -140,3 +144,87 @@ p {
   flex-wrap: 0;
   justify-content: 0;
   align-items: center; }
+
+/* Caracteristicas de noticias html */
+.imagenesNoticias {
+  display: flex;
+  flex-wrap: 0;
+  justify-content: center;
+  align-items: 0; }
+
+.tituloNoticias {
+  display: flex;
+  flex-wrap: 0;
+  justify-content: center;
+  align-items: 0; }
+
+/* Caracteristicas de plataformas html */
+.estrenos iframe, .noticias img, .sectionRecomendaciones img, .imagenesPlataformas img, .fotoGrupo img {
+  border: solid 1px rgba(0, 0, 0, 0.192);
+  border-radius: 10px;
+  padding: 3px; }
+
+.imagenesPlataformas {
+  display: flex;
+  flex-wrap: 0;
+  justify-content: center;
+  align-items: 0;
+  margin-top: 5px;
+  width: fit-content; }
+  .imagenesPlataformas img {
+    width: 35vh; }
+    .imagenesPlataformas img:hover {
+      /* Hover para los videos */
+      box-shadow: 0 0 2px 1px rgba(0, 139, 186, 0.733); }
+
+.tutorial {
+  display: flex;
+  flex-wrap: 0;
+  justify-content: center;
+  align-items: 0;
+  margin-bottom: 10px;
+  margin-top: 5px; }
+
+.tituloPlataformas {
+  display: flex;
+  flex-wrap: 0;
+  justify-content: center;
+  align-items: 0; }
+
+/* Caracteristicas de staff html */
+.estrenos iframe, .noticias img, .sectionRecomendaciones img, .imagenesPlataformas img, .fotoGrupo img {
+  border: solid 1px rgba(0, 0, 0, 0.192);
+  border-radius: 10px;
+  padding: 3px; }
+
+.fotoGrupo {
+  margin-top: 5px;
+  margin-bottom: 10px; }
+  .fotoGrupo img {
+    max-width: 100%;
+    height: 100%;
+    margin-top: 2px; }
+
+.sectionQuienes {
+  width: 90%;
+  font-size: 2.5vh; }
+
+.quienesSomos {
+  display: flex;
+  flex-wrap: 0;
+  justify-content: center;
+  align-items: 0; }
+
+.carousel {
+  display: none; }
+
+@media screen and (max-width: 991px) {
+  /* Media query para que no haya hover en mobile */
+  .carousel {
+    display: block; }
+  .fotoGrupo {
+    display: none; } }
+
+.mainContacto {
+  /* Caracteristica de contacto html */
+  width: 90%; }

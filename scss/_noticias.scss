@@ -1,0 +1,9 @@
+/* Caracteristicas de noticias html */
+
+.imagenesNoticias{
+    @include flex(0, center, 0);      
+}
+
+.tituloNoticias{
+    @include flex(0, center, 0);
+}

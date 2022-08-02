@@ -12,10 +12,8 @@
     iframe{
         max-width: 100%;
         max-height: 100%;
-        padding: 3px;
-        border-radius: 10px;
-
-        &:hover{    /* Animacion para los videos */
+        @extend %bordes;
+        &:hover{    /* Hover para los videos */
             box-shadow: 0 0 2px 1px map-get($colores, "color-hover");
         }
     }
@@ -34,14 +32,12 @@
     @include flex(wrap, space-evenly, 0);
 
     img{
-        
         max-width: 30vh;
         height: 95%;
         margin-bottom: 15px;
-        padding: 3px;
         @extend %bordes;
         
-        &:hover{    /* Animacion para las imagenes */
+        &:hover{    /* Hover para las imagenes */
             box-shadow: 0 0 2px 1px map-get($colores, "color-hover");
         }
     }
@@ -55,7 +51,6 @@
     img{
         max-width: 27vh;
         height: 80%;
-        padding: 3px;
         @extend %bordes;       
     }
 }

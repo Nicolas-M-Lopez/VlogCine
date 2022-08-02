@@ -27,8 +27,7 @@ footer{
 }
 
 .redes{
-    display: flex;
-    justify-content: end;
+    @include flex(0, end, 0);
     list-style: none;
 
     i{
@@ -72,12 +71,10 @@ span{
 
 
 .navbar-collapse{
-    display: flex;
-    justify-content: center;
+    @include flex(0, center, 0);
 
     ul{
-        display: flex;
-        justify-content: space-evenly;
+        @include flex(0, space-evenly, 0);
         width: 50%;
     }
 }
